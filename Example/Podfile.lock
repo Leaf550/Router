@@ -1,0 +1,27 @@
+PODS:
+  - Hybrid (0.1.0):
+    - Util (= 0.1.0)
+  - Router (0.1.0):
+    - Hybrid (= 0.1.0)
+  - Util (0.1.0)
+
+DEPENDENCIES:
+  - Router (from `../`)
+
+SPEC REPOS:
+  https://github.com/fyhNB/PGPodRepo.git:
+    - Hybrid
+    - Util
+
+EXTERNAL SOURCES:
+  Router:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Hybrid: 27f66b8d1ae5a2c5ea3ae7793c0f54294047dcc0
+  Router: 036d73b5ae6fdb4da1375190978ee04c68c42d11
+  Util: c761ec789d1a813045c9eb36e79943a7dc27628d
+
+PODFILE CHECKSUM: c8bbb1bacbed62f15980bcfb75baf61f898844b0
+
+COCOAPODS: 1.10.1

@@ -29,11 +29,11 @@
 
 /* Begin PBXFileReference section */
 		0EE0A2B0F52701FE8AFBF68B /* Pods-Router_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Router_Tests/Pods-Router_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1807B6AD944AE13883B66F7A /* Router.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Router.podspec; path = ../Router.podspec; sourceTree = "<group>"; };
+		1807B6AD944AE13883B66F7A /* Router.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Router.podspec; path = ../Router.podspec; sourceTree = "<group>"; };
 		2A8AFD78B9E9EE3281954AF6 /* Pods-Router_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router_Example.debug.xcconfig"; path = "Target Support Files/Pods-Router_Example/Pods-Router_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		43B7359A488DFB585CD65FD3 /* Pods_Router_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Router_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DDDA848513668992A8B4707 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		50B14C1FDBF95E542A7ED27F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4DDDA848513668992A8B4707 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		50B14C1FDBF95E542A7ED27F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5BB26CB1CC4875815B7574F9 /* Pods-Router_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router_Tests.release.xcconfig"; path = "Target Support Files/Pods-Router_Tests/Pods-Router_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Router_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Router_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 				0EE0A2B0F52701FE8AFBF68B /* Pods-Router_Tests.debug.xcconfig */,
 				5BB26CB1CC4875815B7574F9 /* Pods-Router_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,11 +291,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Router_Example/Pods-Router_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hybrid/Hybrid.framework",
 				"${BUILT_PRODUCTS_DIR}/Router/Router.framework",
+				"${BUILT_PRODUCTS_DIR}/Util/Util.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hybrid.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Router.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Util.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -479,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Router/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Router/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

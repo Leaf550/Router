@@ -1,0 +1,29 @@
+{
+  "name": "Router",
+  "version": "0.1.0",
+  "summary": "A short description of Router.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fyhNB/Router",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fyhNB": "1374872604@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/fyhNB/Router.git",
+    "tag": "0.1.0"
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Router/Classes/**/*",
+  "dependencies": {
+    "Hybrid": [
+      "0.1.0"
+    ]
+  },
+  "swift_version": "5.0"
+}

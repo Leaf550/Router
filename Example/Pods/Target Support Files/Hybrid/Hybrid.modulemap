@@ -1,0 +1,6 @@
+framework module Hybrid {
+  umbrella header "Hybrid-umbrella.h"
+
+  export *
+  module * { export * }
+}
